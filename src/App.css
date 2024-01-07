@@ -13,8 +13,16 @@
   border-radius: 10px;
   border: 0 solid;
   font-size: 18px;
-  margin: 20px;
+  margin: 15px;
+  width: 180px;
 }
+
+/* .container p {
+  font-weight: 600;
+  box-shadow: inset -2px 2px 24px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px 24px;
+  border-radius: 10px;
+} */
 
 .container button:hover {
   background-color: #09252f;

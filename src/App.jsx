@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaRegCopy } from "react-icons/fa6";
 import "./App.css";
 
 function App() {
@@ -32,8 +33,11 @@ function App() {
           style={{ backgroundColor: color }}
           onChange={(e) => setCopyText(e)}
         >
+          <FaRegCopy />
+          &nbsp;&nbsp;
           {color}
         </button>
+        <p>Click to Copy👆</p>
         <button onClick={() => setColor("#242424")}>Reset</button>
       </div>
     </>
