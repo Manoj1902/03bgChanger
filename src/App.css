@@ -11,10 +11,23 @@
   color: white;
   padding: 10px 24px;
   border-radius: 10px;
-  border: 0 solid;
   font-size: 18px;
   margin: 15px;
   width: 180px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 1px solid #646cff;
 }
 
 /* .container p {

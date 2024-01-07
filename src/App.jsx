@@ -5,8 +5,10 @@ import "./App.css";
 function App() {
   const [color, setColor] = useState("#242424");
   const [copyText, setCopyText] = useState("");
+  const [copied, setCopied] = useState("");
 
   const randomColor = () => {
+    setCopied("");
     let symbols = "0123456789ABCDEF";
 
     let rang = "#";
@@ -19,7 +21,7 @@ function App() {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(color);
-    alert("Copied to Clipboard");
+    setCopied("Copied");
   };
 
   return (
@@ -37,7 +39,7 @@ function App() {
           &nbsp;&nbsp;
           {color}
         </button>
-        <p>Click to Copy👆</p>
+        <p>{copied}</p>
         <button onClick={() => setColor("#242424")}>Reset</button>
       </div>
     </>
